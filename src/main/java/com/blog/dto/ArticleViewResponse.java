@@ -7,12 +7,12 @@ import lombok.NoArgsConstructor;
 
 import java.lang.management.LockInfo;
 import java.time.LocalDateTime;
-@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 public class ArticleViewResponse {
     private Long id;
-    private final String title;
-    private final String content;
+    private String title;
+    private String content;
     private LocalDateTime createdAt;
 
     public ArticleViewResponse(Article article) {
